@@ -431,6 +431,11 @@ project-grid {
     height: unset;
   }
 
+  widget-card[style*='--m-'] {
+    --c: min(var(--m-columns, 2), var(--template-columns));
+    --r: var(--m-rows, 2)
+  }
+
   project-grid {
     display: flex;
   }
